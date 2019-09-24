@@ -13,7 +13,7 @@ while True:
        print("Game Over")
        break
 
-try:
+while True:
     DIR = input("As you are stuck, which way do you want to go? (N,S,E,W)").upper()
     print("You have selected "+DIR)
 
@@ -24,9 +24,10 @@ try:
             print("Good choice")
             moves +=1
             if (moves==len(options)):
-                print("You win")
+                print("You successfully escaped the maze in 6 moves!!")
                 exit()
-        #need smthg here that stores moves and reads them
+            else:
+                print("Wrong answer, try again")
 
-        blahblah = SOL
-        print("You successfully escaped the maze in 6 moves!!")
+
+
